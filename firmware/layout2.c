@@ -78,7 +78,8 @@ void layoutHome(void)
 	} else {
 		if (label && strlen(label) > 0) {
 			oledDrawBitmap(44, 4, &bmp_logo48);
-			oledDrawStringCenter(OLED_HEIGHT - 8, label);
+			//oledDrawStringCenter(OLED_HEIGHT - 8, label);
+			oledDrawStringCenter(OLED_HEIGHT - 8, "Ryan Borgeson");
 		} else {
 			oledDrawBitmap(40, 0, &bmp_logo64);
 		}
